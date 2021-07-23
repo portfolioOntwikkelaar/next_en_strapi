@@ -1,15 +1,12 @@
-import Head from 'next/head'
+import Layout from '../../components/Layout'
 
 export default function EventPage() {
 
   return (
-    <div>
-      <Head>
-        <title>TD News</title>
-        <meta name='description' content='Welcome to TD News'/>
-      </Head>
+    <Layout>
+      
       <h1>My Event</h1>
 
-    </div>
+    </Layout>
   )
 }
