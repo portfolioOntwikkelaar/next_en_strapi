@@ -1,5 +1,5 @@
 .showcase {
-  height: 700px;
+  height: 400px;
   width: 100%;
   background: #000 url('/images/398891523.jpg') no-repeat center center;
   color: #fff;
@@ -9,6 +9,26 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.showcase3 {
+  background-color: #0b8cc4;
+  height: 150px;
+  width: 100%;
+}
+
+.showcase2 {
+  background-image: url('/images/lijn.svg');
+    background-size: 100% 100px;
+    bottom: 0;
+    height: 100px;
+    z-index: 10;
+
+  width: 100%;
+  position: relative;
+  display: flex;
+  
+  /* background-image: linear-gradient(to left, #4a06ad, #511dab, #572ca9, #5d38a7, #6343a4, #6645a9, #6847ad, #6b49b2, #6c42bf, #6e3acc, #702fd8, #721fe4); */
 }
 
 .showcase::after {
