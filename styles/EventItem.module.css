@@ -1,6 +1,7 @@
 .event {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  justify-content: revert;
+  /* justify-content: space-between; */
   align-items: center;
   margin: 20px 0;
   padding: 13px;
@@ -12,14 +13,16 @@
 .img {
   flex: 1;
   margin: 10px;
+  width: 150px;
+
 }
 
 .info {
-  flex: 2;
+  flex: 3;
 }
 
 /* begin */
-.card {
+/* .card {
   position: relative;
   overflow: hidden;
   background-color: slategray;
@@ -74,13 +77,14 @@
     opacity: 0;
     transform: translateX(-100%);
   }
-}
+} */
 /* end code */
 
 @media (max-width: 600px) {
   .event {
     flex-direction: column;
     text-align: center;
+    
   }
 
   .info {
