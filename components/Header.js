@@ -20,6 +20,11 @@ export default function Header() {
               <a>Aanbod</a>
             </Link>
           </li>
+          <li>
+            <Link href='/events/add'>
+              <a>Toevoegen BPH</a>
+            </Link>
+          </li>
         </ul>
       </nav>
       
