@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout"
 import EventItem from "@/components/EventItem"
+import Blocks from "@/components/Blocks"
 import {API_URL} from "@/config/index"
 import Link from "next/link"
 import 'semantic-ui-css/semantic.min.css'
@@ -12,7 +13,7 @@ export default function HomePage({events}) {
       <h1>Wie is T&D Technology en wat doen we?
 </h1>
 {events.length === 0 && <h3>Geen informatie hier</h3>}
-
+<Blocks />
 {events.map((evt) => (
   <EventItem key={evt.id} evt={evt} />
 ))}

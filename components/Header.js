@@ -1,6 +1,8 @@
 import { FaSignInAlt, FaSignOutAlt } from "react-icons/fa"
 import { useContext } from "react"
 import { GiHandBandage } from 'react-icons/gi'
+import Image from 'next/image'
+import profilePic from '../public/tnd-technology.png'
 import Search from './Search'
 import Link from 'next/link'
 import AuthContext from '@/context/AuthContext'
@@ -12,7 +14,13 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.logo}>
         <Link href='/'>
-          <a>TD News <GiHandBandage size="30px" /></a>
+        <Image
+        src={profilePic}
+        alt="Picture of the author"
+        width={'300 px'}
+        height={'80 px'}
+      />
+          {/* <a className={styles.logo4}> <GiHandBandage size="30px" /></a> */}
         </Link>
       </div>
       <Search />

@@ -1,3 +1,4 @@
+
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '@/styles/EventItem.module.css'
@@ -7,9 +8,11 @@ import styles from '@/styles/EventItem.module.css'
 
 export default function EventItem({evt}) {
   return (
+    
+
     <div className={styles.event} >
       <div className={styles.image} >
-        <Image src={evt.image ? evt.image.formats.thumbnail.url : '/images/event-default.png'} width={170} height={100} />
+        <Image  src={evt.image ? evt.image.formats.thumbnail.url : '/images/event-default.png'} width={470} height={300} />
       </div>
       <div className={styles.info}>
         <span>
@@ -19,11 +22,12 @@ export default function EventItem({evt}) {
       </div>
       <div className={styles.link}>
         <Link href={`/events/${evt.slug}`}>
-          <a className='btn'>Details</a>
+          <a className='btn'>Bekijken</a>
         </Link>
       </div>
       
     </div>
+    
   )
 }
 

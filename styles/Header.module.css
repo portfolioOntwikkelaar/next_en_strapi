@@ -25,10 +25,11 @@
   list-style: none;
 }
 
-.logo {
-  color: red;
-  font-size: 20px;
-  text-transform: uppercase;
+
+.logo4 {
+  background-image: url('/public/tnd-technology.png');
+  width: 30px;
+  height: 40px;
 }
 
 .logo a {
