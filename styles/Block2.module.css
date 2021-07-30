@@ -1,0 +1,42 @@
+.backgrnd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 700px;
+  padding-left: 100px;
+}
+/* .backgrnd3 {
+  width: 140px;
+} */
+.card {
+  
+  max-width: 350px;
+  height: 400px;
+  margin: auto;
+  padding-left: 11px;
+  padding-right: 11px;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 18px;
+  text-align: center;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
