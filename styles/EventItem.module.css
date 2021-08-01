@@ -10,9 +10,11 @@
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
   width: 320px;
   height: 400px;
-  max-width: 1221px
+  max-width: 1221px;
+  border-radius: 30px;
   
 }
+
 
 /* .body1 {
   display: flex;
@@ -22,13 +24,19 @@
 /* .image {
   
 } */
+.name {
+  
+}
 
 .img {
   display: inherit;
-  flex: 1;
-  margin: 10px;
-  width: 150px;
+  /* flex: 1; */
+  /* margin: 10px; */
+  /* width: 150px; */
 
+}
+.image1 {
+  border-radius: 30px;
 }
 
 .info {

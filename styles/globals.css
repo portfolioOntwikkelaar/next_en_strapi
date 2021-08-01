@@ -59,6 +59,7 @@ h1 {
 }
 
 .btn-secondary {
+  
   font: inherit;
   font-size: 13px;
   background: #000;
@@ -68,6 +69,21 @@ h1 {
   padding: 5px 15px;
   margin: 0 20px;
   cursor: pointer;
+}
+.btn-secondary2 {
+  
+  font: inherit;
+  font-size: 13px;
+  background: rgb(34, 21, 114);
+  color: #fff !important;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 115px;
+  margin: 0 20px;
+  cursor: pointer;
+  margin-left: 354px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .btn-secondary:hover {
@@ -83,3 +99,4 @@ h1 {
 .btn-icon svg {
   margin-right: 5px;
 }
+

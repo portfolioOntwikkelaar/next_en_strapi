@@ -19,6 +19,22 @@
   font-family: arial;
 }
 
+
+.lijn {
+  align-items: flex-end;
+  align-self: flex-end;
+  height: 10px;
+  background-image: linear-gradient(to right, #4713cb, #3d3ad4, #3a52da, #4067dd, #4f7add, #6b8adf, #839ae1, #99aae3, #b7beea, #d1d2f0, #e9e8f7, #ffffff);
+  width: 700px;
+  position: absolute;
+  
+  border-color: #3f3f41;
+  border-top: 4px;
+  border-radius: 12px;
+  margin-left: -145px;
+  margin-bottom: 140px;
+}
+
 .price {
   color: grey;
   font-size: 18px;

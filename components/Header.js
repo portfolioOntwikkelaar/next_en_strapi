@@ -1,14 +1,34 @@
 import { FaSignInAlt, FaSignOutAlt } from "react-icons/fa"
 import { useContext } from "react"
 import { GiHandBandage } from 'react-icons/gi'
+import { IoLanguage } from 'react-icons/io'
 import Image from 'next/image'
 import profilePic from '../public/tnd-technology.png'
-import Search from './Search'
+
+// import Search from './Search'
 import Link from 'next/link'
 import AuthContext from '@/context/AuthContext'
 import styles from '@/styles/Header.module.css'
+import { useRouter } from "next/router"
+
 
 export default function Header() {
+  const router = useRouter()
+  const aanbod = router.locale === "en-US" 
+  ? "Offer" 
+  : router.locale === "nl-NL" 
+  ? "Aanbod" 
+  : router.locale === "fr" 
+  ? "Offrir"
+  : "";
+  const toevoegen = router.locale === "en-US" 
+  ? "Add Adv" 
+  : router.locale === "nl-NL" 
+  ? "Toevoegen Adv" 
+  : router.locale === "fr" 
+  ? "Ajouter une publicité"
+  : "";
+  
   const {user, logout} = useContext(AuthContext)
   return (
     <header className={styles.header}>
@@ -23,13 +43,13 @@ export default function Header() {
           {/* <a className={styles.logo4}> <GiHandBandage size="30px" /></a> */}
         </Link>
       </div>
-      <Search />
+      {/* <Search /> */}
 
       <nav>
         <ul>
           <li>
             <Link href='/events'>
-              <a>Aanbod</a>
+              <a>{aanbod}</a>
             </Link>
           </li>
           <li>
@@ -41,9 +61,16 @@ export default function Header() {
           // if logged in
           <><li>
             <Link href='/events/add'>
-              <a>Toevoegen BPH</a>
+              <a>{toevoegen}</a>
             </Link>
           </li>
+          <div>
+        {router.locales.map(locale =>(
+          <li  key={locale}>
+            <Link href={router.asPath} locale={locale}><a>{locale}</a></Link>
+          </li>
+        ))}
+      </div>
           <li>
             <button onClick={() => logout()} className="btn-secondary btn-icon">
               <FaSignOutAlt /> Uitloggen

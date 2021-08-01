@@ -9,6 +9,8 @@ import {API_URL} from '@/config/index'
 import styles from '@/styles/Event.module.css'
 import { useRouter } from 'next/router'
 
+
+
 export default function EventPage({evt}) {
   const router = useRouter()
 
@@ -21,7 +23,9 @@ export default function EventPage({evt}) {
         
       </div>
       <span>
-      {new Date(evt.date).toLocaleDateString('en-US')} at {evt.time}
+      {new Date(evt.date).toLocaleDateString('en-US')} at 
+      
+      {evt.time}
       </span>
       <h2>
           {evt.name}
@@ -56,7 +60,7 @@ export async function getStaticPaths() {
   const events = await res.json()
 
   const paths = events.map(evt => ({
-    params: {slug: evt.slug}
+    params: {slug: evt.slug},
   }))
   
   return {

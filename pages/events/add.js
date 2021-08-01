@@ -59,7 +59,7 @@ export default function AddEventPage({token}) {
   return (
     <Layout title='Add News'>
       <Link href='/events'>Ga Terug</Link>
-      <h1>Toevoegen BTP</h1>
+      <h1>Toevoegen Adv</h1>
       <ToastContainer />
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.grid}>
@@ -99,7 +99,7 @@ export default function AddEventPage({token}) {
             />
           </div>
           <div>
-            <label htmlFor='date'>Date</label>
+            <label htmlFor='date'>Datum</label>
             <input
               type='date'
               name='date'
@@ -109,7 +109,7 @@ export default function AddEventPage({token}) {
             />
           </div>
           <div>
-            <label htmlFor='time'>Tijd</label>
+            <label htmlFor='time'>Afkorting</label>
             <input
               type='text'
               name='time'
@@ -131,7 +131,7 @@ export default function AddEventPage({token}) {
             onChange={handleInputChange}
           ></textarea>
         </div>
-        <input type="submit" value="Add Event" className='btn' />
+        <input type="submit" value="Advertentie toevoegen" className='btn' />
       </form>
     </Layout>
   )
