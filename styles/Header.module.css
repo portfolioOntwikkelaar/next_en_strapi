@@ -2,11 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to left, #4a06ad, #511dab, #572ca9, #5d38a7, #6343a4, #6645a9, #6847ad, #6b49b2, #6c42bf, #6e3acc, #702fd8, #721fe4);
-  color: #333;
+  /* background-image: linear-gradient(to left, #4a06ad, #511dab, #572ca9, #5d38a7, #6343a4, #6645a9, #6847ad, #6b49b2, #6c42bf, #6e3acc, #702fd8, #721fe4); */
+  /* background-image: linear-gradient(to right bottom, #766bd1, #8e86db, #a6a1e5, #bfbced, #d9d8f5, #d9d8f5, #d9d8f5, #d9d8f5, #bfbced, #a6a1e5, #8e86db, #766bd1); */
+  background-color: #6c42bf;
+  
+  color: rgb(51, 3, 94);
   height: 90px;
   padding: 0 30px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* clip-path: polygon(24% 82%, 0 100%, 0 0, 100% 0, 100% 94%, 77% 89%, 51% 94%); */
+  
+  z-index: 2;
 }
 
 
@@ -18,6 +24,7 @@
 .header a:hover {
   color: #000;
 }
+
 .header ul {
   display: flex;
   align-items: center;

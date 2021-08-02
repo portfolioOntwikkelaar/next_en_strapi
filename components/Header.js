@@ -13,28 +13,14 @@ import { useRouter } from "next/router"
 
 
 export default function Header() {
-  const router = useRouter()
-  const aanbod = router.locale === "en-US" 
-  ? "Offer" 
-  : router.locale === "nl-NL" 
-  ? "Aanbod" 
-  : router.locale === "fr" 
-  ? "Offrir"
-  : "";
-  const toevoegen = router.locale === "en-US" 
-  ? "Add Adv" 
-  : router.locale === "nl-NL" 
-  ? "Toevoegen Adv" 
-  : router.locale === "fr" 
-  ? "Ajouter une publicité"
-  : "";
+  
   
   const {user, logout} = useContext(AuthContext)
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
         <Link href='/'>
-        <Image
+        <Image className={styles.picture}
         src={profilePic}
         alt="Picture of the author"
         width={'300 px'}
@@ -49,7 +35,7 @@ export default function Header() {
         <ul>
           <li>
             <Link href='/events'>
-              <a>{aanbod}</a>
+              <a>Aanbod</a>
             </Link>
           </li>
           <li>
@@ -57,20 +43,19 @@ export default function Header() {
               <a>Dashboard</a>
             </Link>
           </li>
+          <li>
+            <Link href='/events/news'>
+              <a>Nieuws</a>
+            </Link>
+          </li>
           {user ? (
           // if logged in
           <><li>
             <Link href='/events/add'>
-              <a>{toevoegen}</a>
+              <a>Adv toevoegen</a>
             </Link>
           </li>
-          <div>
-        {router.locales.map(locale =>(
-          <li  key={locale}>
-            <Link href={router.asPath} locale={locale}><a>{locale}</a></Link>
-          </li>
-        ))}
-      </div>
+          
           <li>
             <button onClick={() => logout()} className="btn-secondary btn-icon">
               <FaSignOutAlt /> Uitloggen

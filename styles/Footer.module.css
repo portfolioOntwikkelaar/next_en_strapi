@@ -5,9 +5,20 @@
   height: 260px;
   display: flex;
   justify-content: flex-end;
+  gap: 3px;
   
 
 }
+.achtergrond {
+  width: 1421px;
+  margin-right: -190px;
+  background-image: linear-gradient(to bottom, #766bd1, #8e86db, #a6a1e5, #bfbced, #d9d8f5, #d9d8f5, #d9d8f5, #d9d8f5, #bfbced, #a6a1e5, #8e86db, #766bd1);
+  /* clip-path: polygon(0 100%, 100% 100%, 100% 37%, 0 52%); */
+  /* clip-path: polygon(24% 41%, 0 54%, 0 100%, 100% 100%, 100% 44%, 74% 60%, 45% 57%); */
+  clip-path: polygon(26% 23%, 0 32%, 0 100%, 100% 100%, 100% 35%, 72% 48%, 43% 41%);
+}
+
+
 
 /* .block {
   padding-top: 40px;
@@ -31,14 +42,21 @@
 } */
 .paragraf9 { 
   /* color: white; */
-  margin-right: 10px;
+  margin-left: 180px;
   
 }
 .paragraf5 {
   display: flex;
   justify-content: space-between;
+  margin-left: 200px;
   
 }
+.paragraf7 {
+  float: inline-start;
+  margin-left: 90px;
+  
+}
+
 
 .lijn {
   align-items: flex-start;
@@ -91,6 +109,7 @@
   margin: 5px 0;
 }
 .paragraf2 {
-  padding-top: 90px;
+  padding-top: 10 0px;
+  padding-bottom: 40px;
   
 }

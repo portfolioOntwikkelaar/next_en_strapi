@@ -2,7 +2,7 @@ import styles from '@/styles/Showcase.module.css'
 import { useRouter } from 'next/router';
 
 
-export default function Showcase() {
+export default function ShowcaseNews() {
   // const router = useRouter()
   // const titel = router.locale === "en-US" 
   // ? "Trust and Duty" 
@@ -27,15 +27,15 @@ export default function Showcase() {
   // : "";
   return (
     <div className={styles.showcase}>
-      <h1>Trust and Duty</h1>
-      <h2>T&D is uw technologie transformatie partner!</h2>
+      <h1>Nieuws</h1>
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
       <div className={styles.showcase2}>
         
       </div>
       <div className={styles.showcase3}>
         <h3 className={styles.kop3}>
 
-        Onze missie is om de eerste keuze van onze klanten te zijn voor oplossingen en diensten voor procesgerichte bedrijven waarvan de core business is opgebouwd rond mensen, organisaties en locaties.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, expedita consectetur fuga earum sequi autem molestiae laboriosam?
         </h3>
         </div>
 

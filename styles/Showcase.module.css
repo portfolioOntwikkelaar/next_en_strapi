@@ -1,7 +1,21 @@
 .showcase {
   height: 500px;
   width: 100%;
-  background: #000 url('/images/398891523.jpg') no-repeat center center;
+  background: #000 url('/images/398891523.jpg') no-repeat ;
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-items: inherit;
+  padding-top: 40px;
+}
+.showcasenews {
+  height: 500px;
+  width: 100%;
+  background: #000 url('/images/398891523.jpg') no-repeat ;
   color: #fff;
   position: relative;
   display: flex;

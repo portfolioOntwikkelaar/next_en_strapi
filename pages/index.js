@@ -4,13 +4,13 @@ import Blocks from "@/components/Blocks"
 import {API_URL} from "@/config/index"
 import Link from "next/link"
 import 'semantic-ui-css/semantic.min.css'
-import useTranslation from 'next-translate/useTranslation'
+// import useTranslation from 'next-translate/useTranslation'
 
 
 
 //client side
 export default function HomePage({events}) {
-  let { t } = useTranslation()
+  // let { t } = useTranslation()
   
   console.log(events)
   return (
