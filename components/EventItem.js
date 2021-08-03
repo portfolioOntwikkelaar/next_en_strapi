@@ -14,7 +14,7 @@ export default function EventItem({evt}) {
   const { t } = useTranslation('common')
   return (
     
-
+    
     <div className={styles.event} >
       
       <div className={styles.image} >

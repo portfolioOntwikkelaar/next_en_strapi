@@ -24,7 +24,7 @@ export default function HomePage({events}) {
     <Layout >
       <div className={styles.iceberg}></div>
       <div className={styles.voorwaarde}>
-      <h1>OUR VALUES</h1>
+      <h1>{t('waarden')}</h1>
 
       </div>
       
@@ -32,13 +32,19 @@ export default function HomePage({events}) {
 </h1> */}
 {events.length === 0 && <h3>Geen informatie hier</h3>}
 <Blocks />
+<div className={styles.container}>
+
 {events.map((evt) => (
   <EventItem key={evt.id} evt={evt} />
 ))}
+</div>
 {events.length > 0 && (
-  <Link href='/events'>
+  <div className={styles.formargin}>
+
+    <Link href='/events'>
     <a className='btn-secondary2'>Alles Bekijken</a>
   </Link>
+    </div>
 )}
 
     </Layout>

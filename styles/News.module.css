@@ -32,6 +32,20 @@
 }
 .fon3 {
   padding-top: 230px;
+  margin-left: -345px;
+  font-size: large;
+  font-weight: lighter;
+  color: aliceblue;
+}
+.fon4 {
+  padding-top: 230px;
+  margin-left: -220px;
+  font-size: large;
+  font-weight: lighter;
+  color: aliceblue;
+}
+.fon5 {
+  padding-top: 230px;
   margin-left: -260px;
   font-size: large;
   font-weight: lighter;
@@ -75,7 +89,8 @@
 .tech {
   display: flex;
   align-items: center;
-  padding: 15px;
+  
+  /* padding-bottom: 10px; */
   border: 9px;
   border-color: brown;
   width: 120px;
@@ -85,6 +100,30 @@
   background-color: indigo;
   margin-top: 150px;
   margin-left: 30px;
+}
+.tech p {
+  padding-top: -30px;
+  padding-left: 10px;
+}
+.tech1 {
+  display: flex;
+  align-items: center;
+  
+  /* padding-bottom: 10px; */
+  border: 9px;
+  border-color: brown;
+  /* width: 120px; */
+  height: 30px;
+  border-radius: 18px;
+  color: aliceblue;
+  background-color: indigo;
+  margin-top: 150px;
+  margin-left: 40px;
+  width: 80px;
+}
+.tech1 p {
+  padding-top: -30px;
+  padding-left: 5px;
 }
 
 .container2 {
@@ -161,7 +200,7 @@
   margin-bottom: 120px; */
   height: 250px;
   width: 250px;
-  background-image: url('/images/ipad.png');
+  background-image: url('/images/mohoc.jpeg');
 }
 /* .image6:hover {
   -webkit-transform: scale(1.1);

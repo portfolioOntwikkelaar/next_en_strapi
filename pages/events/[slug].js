@@ -40,7 +40,7 @@ export default function EventPage({evt}) {
         <p>{evt.performers}</p>
         <h3>Beschrijving:</h3>
         <p>{evt.description}</p>
-        <h3>Locatie: {evt.venue}</h3>
+        <h3>Afkorting: {evt.venue}</h3>
         <p>{evt.address}</p>
 
         <EventMap evt={evt} />

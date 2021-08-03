@@ -53,13 +53,6 @@ export default function Header() {
               <a>{t('nav3')}</a>
             </Link>
           </li>
-          {user ? (
-          // if logged in
-          <><li>
-            <Link href='/events/add'>
-              <a>{t('nav4')}</a>
-            </Link>
-          </li>
           <div  className={styles.vlag}>
           <div className={styles.vlagitem}>
             <Link href="/" locale="nl">
@@ -85,6 +78,14 @@ export default function Header() {
               {/* <a>Change to en</a> */}
             </Link>
           </div></div>
+          {user ? (
+          // if logged in
+          <><li>
+            <Link href='/events/add'>
+              <a>{t('nav4')}</a>
+            </Link>
+          </li>
+          
           <li>
             <button onClick={() => logout()} className="btn-secondary btn-icon">
               <FaSignOutAlt /> {t('nav5')}

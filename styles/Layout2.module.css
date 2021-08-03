@@ -8,10 +8,35 @@
   margin-top: -40px;
   
 }
+.container {
+  display: flex;
+  align-content: center;
+  width: 1100px;
+  margin-left: 50px;
+}
 /* align-self: stretch; */
 .voorwaarde {
   display: flex;
   align-content: center;
   width: 900px;
   height: 30px;
+  padding-top: 40px;
+  margin-left: 560px;
+}
+.formargin {
+  display: flex;
+  align-self: center;
+  margin-top: 40px;
+  margin-left: 85px;
+}
+
+@media (max-width: 1212px) {
+  .iceberg {
+    width: 1212px;
+  }
+}
+@media (max-width: 800px) {
+  .iceberg {
+    width: 800px;
+  }
 }
