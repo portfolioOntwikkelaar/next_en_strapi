@@ -3,7 +3,8 @@ import styles from '@/styles/Footer.module.css'
 import { AiTwotonePhone } from "react-icons/ai"
 import { MdHome } from "react-icons/md"
 import Image from 'next/image'
-
+import { useRouter } from "next/router"
+import useTranslation from 'next-translate/useTranslation'
 import profilePic from '../public/bvbo_1.jpg'
 import profilePic1 from '../public/trends.jpg'
 import profilePic2 from '../public/group.png'
@@ -11,6 +12,9 @@ import profilePic2 from '../public/group.png'
 
 
 export default function Footer() {
+  const router = useRouter()
+  const { locale } = router
+  const { t } = useTranslation('common')
   
   return (
     <footer >
@@ -42,7 +46,7 @@ export default function Footer() {
       /></div>
         <div className={styles.achtergrond}>
         <div className={styles.paragraf2}>
-      <p>T&D security bvba met als identificatienummer 'BE 0830 397 501' bij de Kruispuntbank van Ondernemingen<br /> is verzekerd tegen lichamelijke of materiële schade  die voortvloeien uit  de uitoefening van zijn activiteiten inzake private veiligheid.<br /> De benadeelden kunnen zich rechtstreeks wenden tot AG insurance te Emile Jacqmainlaan 53, 1000 Brussel. </p></div></div>
+      <p className={styles.paragraf3}>{t('fter')}<br /> {t('fter2')} </p></div></div>
       </div></div>
       
     </footer>

@@ -39,18 +39,18 @@ export default function NewsPage() {
         <div className={styles.image4}></div>
           <div className={styles.bckgrnd}><Link href='/'><a className={styles.techst}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ducimus illo aut quae dolor eveniet.</a></Link></div>
           
-          </div><p className={styles.paragraf}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut maxime culpa accusantium ullam dolore minus ratione accusamus labore mollitia reiciendis!</p>
+          </div><p className={styles.paragraf}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut maxime culpa accusantium ullam dolore minus ratione accusamus labore mollitia reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eveniet! Expedita, reiciendis et fugiat impedit perferendis officiis non.</p>
         
           <div className={styles.container2}>
         <div className={styles.image5}></div>
-        <div className={styles.bckgrnd2}><Link href='/'><a className={styles.techst}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ducimus illo aut quae dolor eveniet.</a></Link></div></div><p className={styles.paragraf}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut maxime culpa accusantium ullam dolore minus ratione accusamus labore mollitia reiciendis!</p>
+        <div className={styles.bckgrnd2}><Link href='/'><a className={styles.techst}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ducimus illo aut quae dolor eveniet.</a></Link></div></div><p className={styles.paragraf}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut maxime culpa accusantium ullam dolore minus ratione accusamus labore mollitia reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eveniet! Expedita, reiciendis et fugiat impedit perferendis officiis non.</p>
         
         <div className={styles.container2}>
         <div className={styles.image6}></div>
         <div className={styles.bckgrnd3}><Link href='/'><a className={styles.techst}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ducimus illo aut quae dolor eveniet.</a></Link></div>
         
 
-      </div>
+      </div><p className={styles.paragraf}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut maxime culpa accusantium ullam dolore minus ratione accusamus labore mollitia reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eveniet! Expedita, reiciendis et fugiat impedit perferendis officiis non.</p>
       <Footer />
     </div>
   )

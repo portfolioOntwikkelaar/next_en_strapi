@@ -1,3 +1,26 @@
-{
-  "greeting": "Hallo wereld"
-}
+
+  {
+    "homepage_title": "Hoe gaat het?",
+    "homepage_description": "aangenaam",
+    "nav1": "Aanbod",
+    "nav3": "Nieuws",
+    "nav4": "Adv toevoegen",
+    "nav5": "Uitloggen",
+    "nav6": "Inloggen",
+    "titel1": "Vertrouwen en Plicht",
+    "titel2": "is uw technologie transformatie partner!",
+    "titel3": "Onze missie is om de eerste keuze van onze klanten te zijn voor oplossingen en diensten voor procesgerichte bedrijven waarvan de core business is opgebouwd rond mensen, organisaties en locaties.",
+    "card1": "KLANTGERICHTHEID",
+    "card2": "DOOR TE ANTICIPEREN OP MARKTTRENDS EN TIJD EN INSPANNING TE INVESTEREN OM DE BEHOEFTEN VAN DE KLANT VOLLEDIG TE BEGRIJPEN, GAAN WIJ OP GROTE LENGTES OM PRODUCTEN EN OPLOSSINGEN VAN SUPERIEURE WAARDE TE LEVEREN.",
+    "card3": "PASSIE",
+    "card4": "ONZE TROTS OP WAT ONS BEDRIJF ONS INSPIRERT EN MOTIVEERT OM HET BESTE OP HET WERK TE GEVEN. WIJ ZIEN ER UIT OM ONS WERK TE LEREN KENNEN EN ONZE KENNIS EN ONS ENTHOUSIASME MET ANDEREN TE DELEN.",
+    "card5": "TEAM GEEST",
+    "card6": "OF OP HET VELD BIJ KLANTEN, OP KANTOOR, OP DE WEG - WIJ ZIJN ÉÉN TEAM, DELEN EEN GEMEENSCHAPPELIJK DOEL EN GEMEENSCHAPPELIJKE DOELEN. OPEN COMMUNICATIE, IDEE DELEN, GEMEENSCHAPPELIJKE DOELEN BEREIKEN ZIJN DE SLEUTEL!",
+    "fter": "T&D security bvba met als identificatienummer 'BE 0830 397 501' bij de Kruispuntbank van Ondernemingen",
+    "fter2": "is verzekerd tegen lichamelijke of materiële schade  die voortvloeien uit  de uitoefening van zijn activiteiten inzake private veiligheid.",
+    "button3": "Bekijken",
+    "titelAdv": "Mijn Advertentie",
+    "wijzigen": "Wijzigen Adv",
+    "verwijderen": "Verwijderen"
+    
+  }

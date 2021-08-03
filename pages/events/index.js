@@ -7,18 +7,12 @@ import { useRouter } from "next/router"
 //client side
 export default function EventsPage({events, page, total}) {
   const router = useRouter();
-  const greeting = router.locale === "en-Us" 
-  ? "Hello world" 
-  : router.locale === "nl" 
-  ? "Hallo Wereld" 
-  : router.locale === "fr" 
-  ? "Bonjour le monde"
-  : "";
+  
 
   console.log(events)
   return (
     <Layout >
-      <h1>{greeting}</h1>
+      {/* <h1>{greeting}</h1> */}
       {/* <h1>Wat doen we?
 </h1> */}
 {events.length === 0 && <h3>Geen informatie hier</h3>}

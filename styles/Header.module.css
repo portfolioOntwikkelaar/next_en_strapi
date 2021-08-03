@@ -44,6 +44,17 @@
   color: red;
 }
 
+.vlag {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  width: 70px;
+}
+.vlagitem {
+  
+  margin: 7px;
+}
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column;

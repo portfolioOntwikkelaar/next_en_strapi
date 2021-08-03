@@ -2,11 +2,16 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '@/styles/EventItem.module.css'
+import { useRouter } from "next/router"
+import useTranslation from 'next-translate/useTranslation'
 
 
 
 
 export default function EventItem({evt}) {
+  const router = useRouter()
+  const { locale } = router
+  const { t } = useTranslation('common')
   return (
     
 
@@ -24,7 +29,7 @@ export default function EventItem({evt}) {
       </div>
       <div className={styles.link}>
         <Link href={`/events/${evt.slug}`}>
-          <a className='btn'>Bekijken</a>
+          <a className='btn'>{t('button3')}</a>
         </Link>
       </div>
       

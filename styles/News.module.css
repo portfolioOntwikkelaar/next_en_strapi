@@ -105,7 +105,7 @@
   margin-bottom: 120px; */
   height: 250px;
   width: 250px;
-  background-image: url('/images/ipad.png');
+  background-image: url('/images/dronescam.jpeg');
   transition: all .3s ease-in;
   opacity: 1;zoom: 1;
 }
@@ -141,15 +141,15 @@
   margin-bottom: 120px; */
   height: 250px;
   width: 250px;
-  background-image: url('/images/ipad.png');
+  background-image: url('/images/dogsecurity.jpeg');
 }
-.image5:hover {
+/* .image5:hover {
   -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1);
-}
+} */
 .image6 {
   margin: 33px;
   margin-top: 100px;
@@ -163,13 +163,13 @@
   width: 250px;
   background-image: url('/images/ipad.png');
 }
-.image6:hover {
+/* .image6:hover {
   -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1);
-}
+} */
 
 .bckgrnd {
   z-index: 99999;
@@ -213,11 +213,16 @@
   margin-left: 9px;
   font-size: x-large;
   font-weight: bold;
+  width: 330px;
+  
 }
 .paragraf {
   align-items: flex-end;
   margin-top: -134px;
-    margin-left: 260px;
+    margin-left: 300px;
+    font-size: 15px;
+    line-height: 26px;
+    width: 1050px;
 }
 /* .bckgrnd {
   background-color: aliceblue;

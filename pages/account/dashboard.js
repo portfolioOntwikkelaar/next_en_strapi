@@ -5,7 +5,12 @@ import DashboardEvent from '@/components/DashboardEvent'
 import { API_URL } from "@/config/index"
 import styles from '@/styles/Dashboard.module.css'
 
+import useTranslation from 'next-translate/useTranslation'
+
 export default function DashboardPage({events, token}) {
+  
+  // const { locale } = router
+  const { t } = useTranslation('common')
   const router = useRouter()
   const deleteEvent = async (id) => {
     if(confirm('Ben je zeker?')) {
@@ -30,7 +35,7 @@ export default function DashboardPage({events, token}) {
     <Layout title='Gebruikers Dashboard'>
       <div className={styles.dash}>
       <h1>Dashboard</h1>
-      <h3>Mijn Advertentie</h3>
+      <h3>{t('titelAdv')}</h3>
 
       {events.map((evt) => (
         <DashboardEvent key={evt.id} evt={evt} handleDelete={deleteEvent} />

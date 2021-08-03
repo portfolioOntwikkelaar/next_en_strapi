@@ -1,0 +1,17 @@
+.iceberg {
+  clip-path: polygon(0 68%, 0 0, 100% 0, 100% 84%, 81% 78%, 59% 95%, 41% 81%, 26% 79%, 15% 100%);
+  background-image: linear-gradient(to bottom, #6c42bf, #6c42bf, #6c42bf, #6c42bf, #6c42bf, #6f44c4, #7147c9, #7449ce, #7a4ed9, #8054e4, #8659f0, #8c5ffb);
+  height: 90px;
+  display: flex;
+  width: 1430px;
+  margin-left: -40px;
+  margin-top: -40px;
+  
+}
+/* align-self: stretch; */
+.voorwaarde {
+  display: flex;
+  align-content: center;
+  width: 900px;
+  height: 30px;
+}
