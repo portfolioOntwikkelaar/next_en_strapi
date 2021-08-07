@@ -66,7 +66,7 @@ export default function Header() {
       />
             </Link>
           </div>
-          <div>
+          <div className={styles.parding2}>
             <Link href="/" locale="en">
             {/* <GiUsaFlag /> */}
             <Image 
@@ -80,7 +80,7 @@ export default function Header() {
           </div></div>
           {user ? (
           // if logged in
-          <><li>
+          <><li className={styles.parding}>
             <Link href='/events/add'>
               <a>{t('nav4')}</a>
             </Link>

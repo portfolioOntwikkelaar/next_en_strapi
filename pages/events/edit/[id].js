@@ -14,6 +14,11 @@ import {API_URL} from '@/config/index'
 import styles from '@/styles/Form.module.css'
 
 export default function EditEventPage({ evt, token }) {
+  // const {locale} = evt;
+  // let translation = undefined;
+  // if (locale === "nl") {
+
+  // }
   const [values, setValues] = useState({
     name: evt.name,
     performers: evt.performers,
@@ -23,12 +28,14 @@ export default function EditEventPage({ evt, token }) {
     time: evt.time,
     description: evt.description,
   })
+  
   const [imagePreview, setImagePreview] = useState(
     evt.image ? evt.image.formats.thumbnail.url : null
   )
   const [showModal, setShowModal] = useState(false)
 
   const router = useRouter()
+  console.log(router)
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -178,6 +185,13 @@ export async function getServerSideProps({params: {id}, req}) {
   const {token} = parseCookies(req)
   const res = await fetch(`${API_URL}/events/${id}`)
   const evt = await res.json()
+  const {locale} = req;
+  let translation = undefined;
+
+  if (locale === "nl") {
+    const translationRes = await fetch(`${API_URL}/events/${initial.localizations.id}`);
+    translation = await translationRes.json();
+  }
 
   // console.log(req.headers.cookie)
 

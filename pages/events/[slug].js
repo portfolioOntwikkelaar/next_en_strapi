@@ -11,8 +11,11 @@ import { useRouter } from 'next/router'
 
 
 
+
 export default function EventPage({evt}) {
   const router = useRouter()
+  
+  
 
   
 

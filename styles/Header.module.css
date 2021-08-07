@@ -54,6 +54,13 @@
   
   margin: 7px;
 }
+
+.parding {
+  margin-left: 14px;
+}
+.parding2 {
+  margin-left: 10px;
+}
 @media (max-width: 1300px) {
   .header {
     max-width: 1300px;
