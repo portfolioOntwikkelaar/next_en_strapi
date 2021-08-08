@@ -26,7 +26,7 @@ export default function SearchPage({events}) {
   )
 }
 // server side getServerSideProp
-export async function getServerSideProp({query: {term}}) {
+export async function getServerSideProps({query: {term}}) {
 
   const query = qs.stringify({
     _where:{
@@ -34,9 +34,9 @@ export async function getServerSideProp({query: {term}}) {
       {name_contains: term},
       {performers_contains: term},
       {description_contains: term},
-      {venue_contains: term}
-    ]
-  }
+      {venue_contains: term},
+    ],
+  },
   })
 
   const res = await fetch(`${API_URL}/events?${query}`)

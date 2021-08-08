@@ -20,22 +20,22 @@ export default function NewsPage() {
             
             <a className={styles.fon2}>{t('dron')}</a>
           </Link>
-          <p className={styles.fon3}>1 {t('juli')} 2021</p>
+          {/* <p className={styles.fon3}>{t('juli1')}</p> */}
         </div>
 
         <div className={styles.image2}>
         <div className={styles.tech1}><p>gadgets</p></div>
         <Link href='/'>
-        <a className={styles.fon2}>{t('cam')}</a>
+        <a className={styles.fon22}>{t('cam')}</a>
           </Link>
-          <p className={styles.fon4}>4 {t('juli')} 2021</p>
+          {/* <p className={styles.fon4}>{t('juli2')}</p> */}
         </div>
         <div className={styles.image3}>
         <div className={styles.tech}><p>{t('badge')}</p></div>
         <Link href='/'>
-        <a className={styles.fon2}>{t('cam2')}</a>
+        <a className={styles.fon23}>{t('cam2')}</a>
           </Link>
-          <p className={styles.fon5}>2 {t('juli')} 2021</p>
+          {/* <p className={styles.fon5}>{t('juli3')}</p> */}
         </div>
       </div>
       {/* next */}

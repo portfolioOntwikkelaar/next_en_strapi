@@ -131,7 +131,7 @@ export default function AddEventPage({token}) {
             onChange={handleInputChange}
           ></textarea>
         </div>
-        <input type="submit" value="Advertentie toevoegen" className='btn' />
+        <input type="submit" value="Add Event" className='btn' />
       </form>
     </Layout>
   )
@@ -141,7 +141,7 @@ export async function getServerSideProps({req}) {
   const {token} = parseCookies(req)
   return {
     props: {
-      token
-    }
+      token,
+    },
   }
 }

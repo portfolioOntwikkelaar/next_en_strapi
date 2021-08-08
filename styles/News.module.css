@@ -25,28 +25,45 @@
 
 .fon2 {
   padding-top: 200px;
-  margin-left: -118px;
+  margin-left: -144px;
+  padding-left: 30px;
+  font-size: 30px;
+  color: aliceblue;
+  font-weight: bold;
+}
+.fon22 {
+  padding-top: 200px;
+  margin-left: -110px;
+  padding-left: 30px;
+  font-size: 30px;
+  color: aliceblue;
+  font-weight: bold;
+}
+.fon23 {
+  padding-top: 200px;
+  margin-left: -150px;
+  padding-left: 30px;
   font-size: 30px;
   color: aliceblue;
   font-weight: bold;
 }
 .fon3 {
   padding-top: 230px;
-  margin-left: -345px;
+  margin-left: -375px;
   font-size: large;
   font-weight: lighter;
   color: aliceblue;
 }
 .fon4 {
   padding-top: 230px;
-  margin-left: -220px;
+  margin-left: -262px;
   font-size: large;
   font-weight: lighter;
   color: aliceblue;
 }
 .fon5 {
   padding-top: 230px;
-  margin-left: -260px;
+  margin-left: -242px;
   font-size: large;
   font-weight: lighter;
   color: aliceblue;

@@ -186,12 +186,12 @@ export async function getServerSideProps({params: {id}, req}) {
   const res = await fetch(`${API_URL}/events/${id}`)
   const evt = await res.json()
   const {locale} = req;
-  let translation = undefined;
+  // let translation = undefined;
 
-  if (locale === "nl") {
-    const translationRes = await fetch(`${API_URL}/events/${initial.localizations.id}`);
-    translation = await translationRes.json();
-  }
+  // if (locale === "nl") {
+  //   const translationRes = await fetch(`${API_URL}/events/${initial.localizations.id}`);
+  //   translation = await translationRes.json();
+  // }
 
   // console.log(req.headers.cookie)
 

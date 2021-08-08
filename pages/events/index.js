@@ -12,9 +12,7 @@ export default function EventsPage({events, page, total}) {
   console.log(events)
   return (
     <Layout >
-      {/* <h1>{greeting}</h1> */}
-      {/* <h1>Wat doen we?
-</h1> */}
+      
 {events.length === 0 && <h3>Geen informatie hier</h3>}
 
 {events.map((evt) => (

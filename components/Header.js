@@ -6,7 +6,7 @@ import Image from 'next/image'
 import profilePic from '../public/tnd-technology.png'
 import profilePic5 from '../public/images/belgie.jpg'
 import profilePic6 from '../public/images/usa.png'
-// import Search from './Search'
+import Search from './Search'
 import Link from 'next/link'
 import AuthContext from '@/context/AuthContext'
 import styles from '@/styles/Header.module.css'
@@ -34,7 +34,7 @@ export default function Header() {
           {/* <a className={styles.logo4}> <GiHandBandage size="30px" /></a> */}
         </Link>
       </div>
-      {/* <Search /> */}
+      <Search />
 
       <nav>
         <ul>

@@ -26,9 +26,8 @@ export default function EventPage({evt}) {
         
       </div>
       <span>
-      {new Date(evt.date).toLocaleDateString('en-US')} at 
-      
-      {evt.time}
+      {/* {new Date(evt.date)} at {evt.time} */}
+      {new Date(evt.date).toLocaleDateString('en-US')} at {evt.time}
       </span>
       <h2>
           {evt.name}
@@ -36,9 +35,12 @@ export default function EventPage({evt}) {
         <ToastContainer />
       {evt.image && (
         <div className={styles.image}>
-          <Image src={evt.image.formats.medium.url} width={960} height={600}/>
+          <Image src={evt.image ? evt.image.formats.thumbnail.url : '/images/event-default.png'} width={960} height={600}/>
         </div>
       )}
+{/* <Image src={evt.image.formats.medium.url } width={960} height={600}/> */}
+{/* evt.image ? evt.image.formats.thumbnail.url : '/images/event-default.png' */}
+
         <h3>Titel:</h3>
         <p>{evt.performers}</p>
         <h3>Beschrijving:</h3>
@@ -86,14 +88,3 @@ export async function getStaticProps({params: { slug }}) {
     revalidate: 1
   }
 }
-
-// export async function getServerSideProps({ query: { slug }}) {
-//   const res = await fetch(`${API_URL}/api/events/${slug}`)
-//   const events = await res.json()
-
-//   return {
-//     props: {
-//       evt: events[0]
-//     },
-//   }
-// }

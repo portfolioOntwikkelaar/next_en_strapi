@@ -50,7 +50,7 @@ export default function HomePage({events}) {
     </Layout>
   )
 }
-// server side getServerSideProp
+// server side getServerSideProps
 export async function getStaticProps() {
   const res = await fetch(`${API_URL}/events?_sort=date:ASC&_limit=3`)
   const events = await res.json()

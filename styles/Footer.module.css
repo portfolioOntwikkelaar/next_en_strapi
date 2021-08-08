@@ -122,3 +122,11 @@
   font-size: medium;
   font-weight: bold;
 }
+
+/* @media (max-width: 1810px) {
+  .achtergrond {
+    margin-right: none;
+    
+    width: 1810px;
+  }
+} */

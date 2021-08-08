@@ -16,12 +16,13 @@ export default function ImageUpload({evtId, ImageUploaded, token}) {
     const res = await fetch(`${API_URL}/upload`, {
       method: 'POST',
       headers: {
-       Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${token}`,
       },
-      body: formData
+      body: formData,
     })
-    if(res.ok) {
-      ImageUploaded()
+
+    if (res.ok) {
+      imageUploaded()
     }
   }
   const handleFileChange = (e) => {

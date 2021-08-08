@@ -1,9 +1,14 @@
 import { useState } from 'react'
-import { useRouter } from 'next/router'
+// import { useRouter } from 'next/router'
 import styles from '@/styles/Search.module.css'
+import { useRouter } from "next/router"
+import useTranslation from 'next-translate/useTranslation'
 
 export default function Search() {
   const [term, setTerm] = useState('')
+  // const router = useRouter()
+  // const { locale } = router
+  const { t } = useTranslation('common')
 
   const router = useRouter()
 
@@ -20,7 +25,7 @@ export default function Search() {
           type='text'
           value={term}
           onChange={(e) => setTerm(e.target.value)}
-          placeholder='Zoeken'
+          placeholder={t('search')}
         />
       </form>
     </div>

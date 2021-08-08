@@ -103,7 +103,13 @@
 } */
 /* end code */
 
-
+/* @media (max-width: 1810px) {
+  .event {
+    width: 500px;
+    height: 540px;
+  }
+  
+} */
 
 
 /* end code */

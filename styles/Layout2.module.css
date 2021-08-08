@@ -30,6 +30,19 @@
   margin-left: 85px;
 }
 
+/* @media (max-width: 1810px) {
+  .iceberg {
+    width: 1810px;
+  }
+  .voorwaarde {
+    margin-left: 810px;
+  }
+  .container {
+    width: 1810px;
+    margin-left: 80px;
+    
+  }
+} */
 @media (max-width: 1212px) {
   .iceberg {
     width: 1212px;
